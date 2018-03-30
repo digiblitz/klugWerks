@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright: 2018 digiBlitz Foundation
+  
+  License: digiBlitz Public License 1.0 (DPL) 
+  Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+  
+  Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+  
+  Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+  
+  "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <servlet>
+    <servlet-name>spring</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>spring</param-name>
+      <param-value>/WEB-INF/spring-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+        <listener-class>
+        	com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+        </listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>ContactUs</servlet-name>
+        <servlet-class>
+        	com.sun.xml.ws.transport.http.servlet.WSServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactUs</servlet-name>
+        <url-pattern>/ContactUs</url-pattern>
+    </servlet-mapping>
+    
+  <welcome-file-list>
+    <welcome-file>
+/jsp/frmHome.jsp
+    </welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>continuation</filter-name>
+    <filter-class>org.eclipse.jetty.continuation.ContinuationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>continuation</filter-name>
+    <url-pattern>/cometd/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>cometd</servlet-name>
+    <servlet-class>org.cometd.annotation.AnnotationCometdServlet</servlet-class>
+    <init-param>
+      <param-name>timeout</param-name>
+      <param-value>20000</param-value>
+    </init-param>
+    <init-param>
+      <param-name>interval</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>maxInterval</param-name>
+      <param-value>10000</param-value>
+    </init-param>
+    <init-param>
+      <param-name>maxLazyTimeout</param-name>
+      <param-value>5000</param-value>
+    </init-param>
+    <init-param>
+      <param-name>long-polling.multiSessionInterval</param-name>
+      <param-value>2000</param-value>
+    </init-param>
+    <init-param>
+      <param-name>logLevel</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>transports</param-name>
+      <param-value>org.cometd.websocket.server.WebSocketTransport</param-value>
+    </init-param>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value>com.semika.cometd.ChatService</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cometd</servlet-name>
+    <url-pattern>/cometd/*</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

@@ -1,0 +1,287 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+     <head>
+     <title>What'spoweringklugWerks?</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/stuck.css">
+	 <link rel="stylesheet" href="css/skeleton.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>     
+     <script src="js/superfish.js"></script>
+     <script src="js/tmStickUp.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/camera.js"></script>  
+     <script src="js/sForm.js"></script> 
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                jQuery('#camera_wrap').camera({
+                    loader: true,
+                    pagination: true,
+                    minHeight: '200',
+                    thumbnails: false,
+                    height: '50%',
+                    caption: true,
+                    navigation: false,
+                    fx:  'mosaic'
+                });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+     </head>
+	<style type="text/css"> 
+	.gridd2 h5 {
+    color: #333;
+    text-align: left;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+	 .gridd1 ul li
+	 { 
+	 text-align:left; 
+	 list-style-position:inside;
+	
+	 }
+	.gridd1 li a 
+	 {
+	     font-size: 14px;
+    color: #000;
+	 }
+	 .gridd1 li a hov
+	 {
+	color: #fff;
+	 }
+	 .gridd1 li a:hover
+	 {
+	 color: red;
+	 }
+	 .gridd1 li i {
+    padding: 5px 8px;
+}
+	 </style>
+<body id="top">
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header.jsp" %>
+</header>
+
+<form id="form1" name="form1" method="post" action="">
+<div class="bg1">
+
+<!--=======slider================================-->
+
+    <!--<div class="slider_wrapper">
+        <div id="camera_wrap">
+           <div data-src="images/slide1.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation <span>System</span></div>
+                        </div>                  
+                    
+                </div>
+           </div>
+            <div data-src="images/slide2.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">Reduce Complexities In Production Management</div>
+                            <div class="title-2">& Process Accomplishments  </div>
+                        </div>                  
+                    
+                </div>
+           </div>
+            <div data-src="images/slide3.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">Use State-Of-The-Art Compliance Frameworks </div>
+                            <div class="title-2">To Raise The Bar Of Excellence</div>
+                        </div>                  
+                   
+                </div>
+           </div>
+        </div>
+    </div>-->
+  <!--  <div class="clear"></div>-->
+
+<!--=======content================================-->
+
+    <div id="content" class="p23" style="width:1170px;  position: relative;
+  background: url(../images/bg1.jpg) 0 0 repeat; margin:0 auto;">
+        
+		<div class="container_12 center">
+            <h2 style="background: #000;
+    color: #fff;
+    padding: 15px 0;">What's powering klugWerks?</h2>
+			<ul style="text-align:left; padding:10px 0;" class="griddd">
+				<li><i class="fa fa-check"></i><a>Active Engagement between Manufacturing Execution Systems (MES), Business Services and ERP</a></li>
+				<li><i class="fa fa-check"></i><a>Good Manufacturing Practice(GMP) guidelines</a></li>
+				<li><i class="fa fa-check"></i><a>Material & Safety - Data Sheet Compliance</a></li>
+				<li><i class="fa fa-check"></i><a>Control/Mitigate Risk & 100% preparedness for Audit</a></li>
+				<li><i class="fa fa-check"></i><a>OAGIS & XML Data Standards</a></li>
+			
+			</ul>
+        </div>
+
+        <div class="container_12 center">
+		
+			<h2 style="padding: 15px;
+    background: #000;
+    color: #fff;
+    margin: 20px 0 0 0;">How is your business optimised with klugWerks?</h2>
+                <div class="grid_6">
+                    <div class="box1">
+                        <!--<a href="#" class="circle col5"><i class="fa fa-gears"></i></a>-->
+                        <div class="gridd2">
+							<h5>Manufacturing Best Practice</h5>
+							<ul class="gridd1" style="text-align:left; padding:10px 0;">
+								<li><i class="fa fa-check"></i><a class="hov">Conduct Evidence-Based Best Practices through our SEARCH MANUFACTURIGN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRACTICE frame work component</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Perform Promising Practices by connective with Industry Reference 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architecture</a> </li>
+								<li><i class="fa fa-check"></i><a class="hov">Outcome Based Practice</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Document Management</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Artifacts/Assets Management</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Seamless Integration between various silos and business units</a></li>
+							</ul>
+						</div>
+                        
+                    </div>
+                </div>
+                
+                <div class="grid_6">
+                    <div class="box1">
+                       <!-- <a href="#" class="circle col7"><i class="fa fa-globe glb"></i></a>-->
+                         <div class="gridd2">
+							<h5>Risk Management</h5>
+							<ul class="gridd1" style="text-align:left; padding:10px 0;">
+								<li><i class="fa fa-check"></i><a class="hov">Risk Management</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Risk Assessment processes</a> </li>
+								<li><i class="fa fa-check"></i><a class="hov">Risk Prognosis process</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Risk Management Processes</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Credentials & Review Audit Processes</a></li>
+								<li><i class="fa fa-check"></i><a class="hov">Rules based Potential Malpractice Detection & control</a></li>
+								
+							</ul>
+						</div>
+                    </div>
+                </div>
+           
+		</div>
+        
+		
+		
+		
+		
+		
+		
+		
+		
+        <!--div class="container_12">
+            <div class="grid_12">
+                <div class="divider"></div>
+                <div class="center">
+                    <h3>Work smarter with our company!</h3>
+                    <h3>We provide innovative and cost-effective industrial solutions!</h3>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="container_12">
+            <div class="grid_12">
+                <div class="center">
+                    <h3>Our partners</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container_12">
+            <div class="grid_2 alpha">
+                <div class="item">
+                    <div><img src="images/page1_ico1.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico2.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico3.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico4.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico5.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2 omega">
+                <div class="item">
+                    <div><img src="images/page1_ico6.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div-->                                                            
+        </div>
+    </div>
+</div>
+</form>
+
+<!--=======footer=================================-->
+
+ <footer>			 
+			
+                    <!-- FOOTER STARTS HERE -->
+                        
+						<%@ include file = "../../include/Footer.jsp" %>
+                    <!-- FOOTER ENDS HERE -->
+               
+ </footer>
+</body>
+</html>

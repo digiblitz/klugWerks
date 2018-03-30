@@ -1,0 +1,344 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+/**************************
+*
+*	GENERAL
+*
+**************************/
+
+.slider_wrapper {
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-bottom: 54px;
+	height: auto;
+}
+
+
+.camera_target_content {
+	overflow: visible !important;
+}
+
+.camera_wrap {
+	display: none;
+	position: relative;
+	overflow: visible !important;
+	z-index: 0;
+	margin: 0!important;
+}
+
+.camera_wrap img {
+	max-width: 10000px;
+}
+
+.camera_fakehover {
+	height: 100%;
+	min-height: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.camera_src {
+	display: none;
+}
+
+.camera_caption {
+	position: relative;
+	overflow: hidden;
+	margin: 12.2% auto 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.title-1 {
+	font-size: 109px;
+	line-height: 110px; 
+}
+.title-2 {
+	font-size: 79px;
+	line-height: 83px;
+	margin-top: -9px;
+	text-transform: capitalize;
+}
+
+.camera_caption .title-2 span {
+	display: block;
+    font-size: 69px;
+    letter-spacing: 0;
+    line-height: 76px;
+}
+
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.camera_target_content .camera_link {
+    background: url(../images/blank.gif);
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+.camera_loader {
+    background: #fff url(../images/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.6) url(../images/camera-loader.gif) no-repeat center;
+	border: 1px solid #ffffff;
+	border-radius: 18px;
+	height: 36px;
+	left: 48%;
+	overflow: hidden;
+	position: absolute;
+	margin: 0;
+	top: 40%;
+	width: 36px;
+	z-index: 3;
+}
+
+.camera_nav_cont {
+	height: 65px;
+	overflow: hidden;
+	position: absolute;
+	right: 9px;
+	top: 15px;
+	width: 120px;
+	z-index: 4;
+}
+
+.camerarelative {
+	overflow: hidden;
+	position: relative;
+}
+
+.camera_commands > .camera_stop {
+	display: none;	
+}
+
+.camera_clear {
+	display: block;
+	clear: both;
+}
+
+.showIt {
+	display: none;
+}
+
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: -1px 0 25px;
+	position: relative;
+}
+
+.camera_pag {
+    z-index: 1;
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+    overflow: hidden;
+
+	transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+	cursor: pointer;
+	display: inline-block;
+	height: 14px;
+	position: relative;
+	text-align: center;
+	text-indent: -9999px;
+	width: 14px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li+li {margin-left: 16px;}
+
+.camera_wrap .camera_pag .camera_pag_ul li > span {
+	background: #a8a8a8;
+	height: 14px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 14px;
+
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span, 
+.camera_wrap .camera_pag .camera_pag_ul li:hover > span {
+	background: #000;
+}
+
+.camera_pag_ul li img {
+	display: none;
+	position: absolute;
+}
+
+.camera_pag_ul .thumb_arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+	top: 0;
+	left: 50%;
+	margin-left: -4px;
+	position: absolute;
+}
+
+.camera_prev, .camera_next {
+    background: url("../images/arrow-next.png") -34px 0 no-repeat;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 43%;
+    width: 36px;
+    height: 71px;
+    z-index: 999;
+    right: 0px;
+    opacity: 0.9;
+
+
+    transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.camera_prev {
+	background: url("../images/arrow-prev.png") 0 0 no-repeat;
+	left: 0px;
+}
+
+.camera_prev, .camera_next {
+    opacity: 1;
+}
+
+.camera_prev:hover {background-position: -36px 0;}
+.camera_next:hover {background-position: 2px 0;}
+
+/* =====================Responsive=====================*/
+
+@media only screen and (max-width: 995px) {
+	
+	.camera_caption {margin-top: 11%;}
+
+	.title-1 {
+		font-size: 100px;
+		line-height: 100px;
+	}
+	.title-2, .camera_caption .title-2 span {
+		font-size: 68px;
+		line-height: 68px;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 769px) {
+	
+	.camera_caption {margin-top: 10%;}
+
+	.title-1 {
+		font-size: 75px;
+		line-height: 75px;
+	}
+	.title-2, .camera_caption .title-2 span {
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.title-1 {
+		font-size: 65px;
+		line-height: 65px;
+	}W
+	.title-2, .camera_caption .title-2 span {
+		font-size: 25px;
+		line-height: 25px;
+	}
+
+}

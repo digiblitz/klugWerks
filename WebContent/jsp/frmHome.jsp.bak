@@ -1,0 +1,159 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/stuck.css">
+	 <link rel="stylesheet" href="css/skeleton.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>     
+     <script src="js/superfish.js"></script>
+     <script src="js/tmStickUp.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/camera.js"></script>  
+     <script src="js/sForm.js"></script> 
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                jQuery('#camera_wrap').camera({
+                    loader: true,
+                    pagination: true,
+                    minHeight: '200',
+                    thumbnails: false,
+                    height: '50%',
+                    caption: true,
+                    navigation: false,
+                    fx:  'mosaic'
+                });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+     </head>
+<body id="top">
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header.jsp" %>
+</header>
+
+<form id="form1" name="form1" method="post" action="">
+<div class="bg1">
+
+<!--=======slider================================-->
+
+    <div class="slider_wrapper">
+        <div id="camera_wrap">
+           <div data-src="images/slide1.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">                 
+                            <div class="title-2">A Manufacturing Business Digital Transformation</div>
+                            <div class="title-2">& Process Automation <span>System</span></div>
+							<p >&nbsp;</p>
+							<a href="signUp.html?signUpProcess=getStarted" class="newastyle" style="margin-left:331px">Get Started</a>
+							&nbsp;<p class="newpstyle">&nbsp;&nbsp;or</p>
+							<a href="signUp.html?signUpProcess=pricingDetails" class="newastyle">Start a free 30-day trail</a>
+                        </div>                  
+                    
+                </div>
+           </div>
+            <div data-src="images/slide2.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">Reduce Complexities In Production Management</div>
+                            <div class="title-2" style="margin-top:4px;">& Process Accomplishments  </div>
+							<p >&nbsp;</p>
+							<a href="signUp.html?signUpProcess=getStarted" class="newastyle" style="margin-left:331px">Get Started</a>
+							&nbsp;<p class="newpstyle">&nbsp;&nbsp;or</p>
+							<a href="signUp.html?signUpProcess=pricingDetails" class="newastyle">Start a free 30-day trail</a>
+                        </div>                  
+                    
+                </div>
+           </div>
+            <div data-src="images/slide3.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">Use State-Of-The-Art Compliance Frameworks <br>To Raise The Bar Of Excellence </div>
+							<p >&nbsp;</p>
+							<a href="signUp.html?signUpProcess=getStarted" class="newastyle" style="margin-left:331px">Get Started</a>
+							&nbsp;<p class="newpstyle">&nbsp;&nbsp;or</p>
+							<a href="signUp.html?signUpProcess=pricingDetails" class="newastyle">Start a free 30-day trail</a>
+                            
+                        </div>                  
+                   
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+<!--=======content================================-->
+
+    <div id="content" class="p23" style="width:1170px;  position: relative;
+  background: url(../images/bg1.jpg) 0 0 repeat; margin:0 auto;">
+        <div class="container_12 center">
+           
+                
+            
+       <div class="block">
+                       
+                <p style="text-align: justify;">klugWerks reduces your complexities in dealing with Production management, Process accomplishments and compliance to  various global practices. We use state-of-the-art Processes, Production Management Methodologies and Compliance frameworks to raise the bar of excellence of our practice.</p>
+   
+                <p style="text-align: justify;">klugWerks helps your organization in Business Automation using BPM & SOA technologies. It is powered by digiBlitz ELMT (Enterprise Landscape Management Transformation) platform which helps you to successfully implement your Business-Technology Landscape transformation projects. The solution is specifically tailor made for manufacturing industry.</p> 
+			    
+				<p style="text-align: justify;">klugWerks provides the front end presentation/facade portal for your business-technology transformation architecture and digiBlitz ELMT helps to successfully implement ongoing transformation initiatives. </p>
+				
+				<p style="text-align: justify;">klugWerks is offered as both SAAS under a private or public cloud (or combination of both) as well as under Enterprise License in your server.</p>
+				
+           </div>
+	       
+			</div>
+	
+
+        
+    </div>
+</div>
+</form>
+
+<!--=======footer=================================-->
+
+ <footer>			 
+			
+                    <!-- FOOTER STARTS HERE -->
+                        
+						<%@ include file = "../../include/Footer.jsp" %>
+                    <!-- FOOTER ENDS HERE -->
+               
+ </footer>
+</body>
+</html>

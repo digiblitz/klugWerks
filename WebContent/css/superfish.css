@@ -1,0 +1,224 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+nav>.sf-menu {
+	z-index: 990;
+	position: relative;
+	text-align: center;
+	padding-top:34px;
+	margin-top:-14px;
+}
+
+nav { 
+	margin: 0;
+	position:relative;
+	padding: 0;
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none;
+}
+
+.sf-menu li {
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	/*padding: 10px 0 16px;*/
+}
+
+.sf-menu>li+li {margin-left: 20px;/* padding-top:30px;*/}
+
+.sf-menu>li>ul>li {
+  	float: none;
+  	position: static;
+}
+
+.sf-menu>li>a{
+	display: inline;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	font: 400 15px/30px 'Archivo Narrow', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+}
+
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a {
+	position: relative;
+	text-decoration: none;
+	color: #E39500;
+	font-weight:bold;
+}
+
+.sf-menu>li>.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 32%;
+	top: 28px;
+	width: 12px;
+	background: url(../images/arrow_menu.png) 0 0 no-repeat;
+	height: 6px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu > li > ul:after {
+	background: url(../images/arrow_menu_1.png) 0 0 no-repeat;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 6px;
+	top: -6px;
+	left: 41px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul{
+	position: absolute;
+	z-index: 999;
+	top: 52px;
+	left: -31px;
+	padding: 3px 0 6px;
+	width: 194px;
+	background: #000;
+	text-align: center;
+	
+}
+
+.sf-menu li ul li{
+	position: relative;
+	display: block;
+	text-align: center;
+	float: none !important;
+	padding:10px 0px 42px 0px;
+	cursor: default;
+}
+
+.sf-menu li ul li+li {
+	border-top: 1px solid #d5d5d5;
+}
+
+
+.sf-menu li ul li a{
+	position: relative;
+	text-transform: uppercase;
+	z-index: 999;
+	display: inline;
+	color: #fff;
+	font: 700 11px/23px 'Asap';
+	text-decoration: none;
+	margin-left:25px;
+	font-style:normal;
+	font-family:sans-serif;
+	font-weight:bold
+	}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	right: -60px;
+	width: 8px;
+	height: 7px;
+	top: 11px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li li>a {  
+	color: #1ea4e2;
+	text-decoration: none;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li li ul{
+	position: absolute;
+	left: 195px;
+	top: 0px;
+	background: #000;
+	padding: 0;
+	width: 100px;
+}
+
+.sf-menu li li ul li {
+
+}
+
+.sf-menu li li ul li a {
+	color: #fff;
+	padding-right: 0;
+}
+
+.sf-menu li li ul li a:hover {
+	color: #1ea4e2;
+	text-decoration: none;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1299px) {
+	
+}
+
+@media only screen and (max-width: 995px) {
+	
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;	
+	}	
+
+  	header nav ul {
+  		border: none;
+    }
+
+	.sf-menu{
+		visibility: hidden; 
+		float: none;
+	}
+
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		background: #f4f4f4;
+		color:#535252;
+		width:100%;
+		margin: 20px auto 20px;
+		float: none;
+        outline: none;
+		border:2px solid #ffffff;
+	}
+
+}

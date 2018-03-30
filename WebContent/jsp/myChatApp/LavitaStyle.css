@@ -1,0 +1,186 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+body{
+	background:transparent;
+	margin:0px;
+	font-family:"Times New Roman", Times, serif;
+}
+
+.myChat_box, .msg_box {
+	background:#fff;
+	width:250px;	
+	bottom:0px;
+	right:20px;
+	position:fixed;
+	border-radius:5px 5px 0px 0px;
+}
+
+.myChat_head,.msg_head{
+	cursor:pointer;
+	background:#f39c12;
+	padding:15px;
+	color:white;
+	border-radius:5px 5px 0px 0px;
+}
+
+.myChat_body{
+	height:100px;
+}
+
+.user{
+	padding: 28px 0px 0px 5px;
+	position:relative;
+	cursor:pointer;
+}
+
+.user:hover{
+	background:#f8f8f8;
+}
+
+/*.user:before{
+	content:"";
+	position:absolute;
+	background:#2ecc71;
+	width:10px;
+	height:10px;
+	left:8px;
+	top:24px;
+	border-radius:5px;
+}
+*/
+.msg_box{
+	display:none;
+	bottom:-5px;
+}
+
+.msg_head{
+	background: #3498db;
+    padding: 20px 15px 30px 0px;
+    
+}
+
+.msg_body{
+	height:300px;
+	font-size:12px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+.close{
+	float:right;
+	cursor:pointer;
+}
+
+.arrow_down {
+	margin: 4px 0px 0px 15px;
+	float:right;
+	cursor:pointer;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;  
+  border-top: 10px solid #fff;
+}
+
+.arrow_up {
+	display:none;
+	margin: 4px 0px 0px 15px;
+	float:right;
+	cursor:pointer;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;  
+  border-bottom: 10px solid black;
+}
+
+.msg_input{
+	border:transparent;
+	padding:5px;
+	border-top:2px solid #3498db;
+	width:100%;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.msg_a{
+	margin:10px 20px 0px 20px;	
+	padding:15px;
+	background:#99FFcc;
+	position:relative;
+	border-radius:5px;
+	min-height:20px;
+	bottom:5px;
+	font-size:15px;
+	 word-wrap: break-word;
+}
+
+.msg_a:before{
+	content:"";
+	position:absolute;
+	width:0px;
+	height:0px;
+	top:7px;
+	left:-29px;
+	border:15px solid;
+	border-color:transparent #99FFcc transparent transparent;
+}
+
+
+.msg_b{
+	margin:10px 20px 0px 20px;	
+	padding:15px;
+	background:#FFFF99;
+	position:relative;
+	border-radius:5px;
+	min-height:20px;
+	bottom:5px;
+	font-size:15px;
+	 word-wrap: break-word;
+	
+}
+
+.msg_b:before{
+	content:"";
+	position:absolute;
+	width:0px;
+	height:0px;
+	top:7px;
+	right:-29px;
+	border:15px solid;
+	border-color:transparent transparent transparent #FFFF99;
+}
+
+.msg_head_label{
+	padding: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

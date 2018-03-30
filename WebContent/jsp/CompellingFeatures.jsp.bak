@@ -1,0 +1,346 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+     <head>
+     <title>Compelling Features</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/stuck.css">
+	 <link rel="stylesheet" href="css/skeleton.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>     
+     <script src="js/superfish.js"></script>
+     <script src="js/tmStickUp.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/camera.js"></script>  
+     <script src="js/sForm.js"></script> 
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                jQuery('#camera_wrap').camera({
+                    loader: true,
+                    pagination: true,
+                    minHeight: '200',
+                    thumbnails: false,
+                    height: '50%',
+                    caption: true,
+                    navigation: false,
+                    fx:  'mosaic'
+                });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+		<style>
+			.Table
+    {
+        display: table;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+	.Heading p{ color:#cc0001; font-weight:bold; font-size:17px; padding:10px 0;}
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-width: 1px thin;
+        padding:10px;
+		border-color: #D0D0D0;
+	
+    }
+	.Cell ul li{ padding:3px; color: #333;}
+	.Cell ul li i{padding:3px 6px 0 0;  color: #E39500;}
+	.pad{ padding:10px 0;}
+	.grid_3{ height:200px!important;}
+	.bor{     border-bottom: 1px solid #ccc;
+    width: 1040px;
+    margin: 20px auto;
+    float: left;}
+	.grid_3 p{ text-align:left;}
+		</style>
+     </head>
+<body id="top">
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header.jsp" %>
+</header>
+
+<form id="form1" name="form1" method="post" action="">
+<div class="bg1">
+
+<!--=======slider================================-->
+
+    <!--<div class="slider_wrapper">
+        <div id="camera_wrap">
+           <div data-src="images/slide1.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                       
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation <span>System</span></div>
+                                          
+                    </div>
+                </div>
+           </div>
+            <div data-src="images/slide2.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                       
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation<span>System</span></div>
+                                          
+                    </div>
+                </div>
+           </div>
+            <div data-src="images/slide3.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation<span>System</span></div>
+                                        
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+-->
+<!--=======content================================-->
+
+    <div id="content" class="p23" style="width:1170px; position: relative;
+  background: url(../images/bg1.jpg) 0 0 repeat; margin:0px auto;">
+        	
+		<div class="container_12">
+		
+			<div style="margin:25px 0;">
+				<h2>Compelling Features of KlugWerks</h2>
+			</div>
+			
+			<div class="grid_12">
+			<div class="grid_3">
+				<h5>Enterprise Dashboard</h5>
+				<p>Can you imagine having all your applications finally getting together to work for you and your schedule and needs? This product has a powerful underlying Engine that integrates all you applications and brings centralized manageability.</p>
+			</div>
+			<div class="grid_3">
+				<h5>User specific dashboards </h5>
+				<p>Manage, control and evaluate activities through defined set of roles, responsibilities and rights for specific users. Perfectly deploys for Role Based Management.</p>
+			</div>
+			<div class="grid_3">
+				<h5>Governance Tools </h5>
+				<p>Compliance and Regulations Management Module could be adopted for different manufacturing standards recognized across the globe and industries.</p>
+			</div>
+			
+			<div class="grid_3">
+				<h5>Version Control Tools</h5>
+				<p>Integrated Version Control, Governance tools and support for popular third-party applications.</p>
+			</div>
+			
+			<div class="bor"></div>
+			
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Maximise productivity</h5>
+				<p>Trouble with third party applications? We bring seamless and hassle free connectivity with external applications like QuickBooks, ACT, Salesforce, etc.</p>
+			</div>
+			
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Access to custom URL </h5>
+				<p>You could incorporate your brand Logo and Name in the user interface and could also opt for a custom URL to boost your brand.</p>
+			</div>
+			
+			
+			
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Project Management</h5>
+				<p>Built-in tools for Program and Project Management.</p>
+			</div>
+			
+			<div class="grid_3" style="height:180px!important;">
+				<h5>Cloud Based</h5>
+				<p>The system is 100% web based with an option of implementing in private or public cloud. It's a complete secured environment for your organizational process and applications. No more worries and nightmares on security.</p>
+			</div>
+			
+			<div class="bor"></div>
+			<div class="grid_3" style="height:180px!important;">
+				<h5>Business Process Modeling Tools</h5>
+				<p>Integrated Business Process Modeling tools to manage and optimize Business Process Change Management.</p>
+			</div>
+			
+			<div class="grid_3" style="height:180px!important;">
+				<h5>Key metrics</h5>
+				<p>With access to live feeds, custom metrics and charts, it makes you organize the business functionality process much better.</p>
+			</div>
+			
+			<div class="grid_3" style="height:180px!important;">
+				<h5>Cloud ERP</h5>
+				<p>Be less concerned about the IT assets and infrastructure. Just hop in to our Cloud based ERP platform and enjoy seamless integration throughout all business modules.</p>
+			</div>
+			
+			<div class="grid_3" style="height:180px!important;">
+				<h5>Cloud Asset management </h5>
+				<p>Your growth invariability leads to the increase of digital assets; managing it on the cloud would benefit you on both time and money. In case of Education, it's a bit serious need.</p>
+			</div>
+			
+			
+			<div class="bor"></div>
+			
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Cloud Storage </h5>
+				<p>Upload & share course materials, Store Student information, and Administration documents in a secure cloud storage space. </p>
+			</div>
+			<div class="grid_3" style="height:160px!important;">
+				<h5>Business Automation Assistance </h5>
+				<p>Not an expert in designing process follow and modelling? Never mind. We equip you with on demand Business Automation assistance. </p>
+			</div>
+			
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Architectural Frameworks</h5>
+				<p>Adherence to proven international architectural Standards such as TOGAF, DODAF, Zachman - Architecture Framework Design.</p>
+			</div>
+			<div class="grid_3" style="height:135px!important;">
+				<h5>Comprehensive Business Intelligence tools</h5>
+				<p>Comprehensive built-in support for the most commonly used reports in the manufacturing domain, which are easily extensible to develop custom reports.</p>
+			</div>
+			
+			
+			
+			<!--div class="bor"></div>
+			
+			
+			<div class="grid_3">
+				<h5>17.	Adherence to International Frameworks</h5>
+				<p>Standards such as TOGAF, DODAF, Zachman - Architecture Framework Design based on proven concepts such as TOGAF, DODAF, and Zachman.</p>
+			</div>
+			
+			<div class="grid_3">
+				<h5>18.	Comprehensive Business Intelligence tools </h5>
+				<p>Comprehensive built-in support for the most commonly used reports used in the manufacturing domain, and easily extensible to develop custom reports.</p>
+			</div>
+			</div-->
+		
+			
+		</div>
+		
+        <!--<div class="container_12">
+            <div class="grid_12">
+                <div class="divider"></div>
+                <div class="center">
+                    <h3>Work smarter with our company!</h3>
+                    <h3>We provide innovative and cost-effective industrial solutions!</h3>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>-->
+       
+	   
+	    <!--<div class="container_12">
+            <div class="grid_12">
+                <div class="center">
+                    <h3>Our partners</h3>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="container_12">
+            <div class="grid_2 alpha">
+                <div class="item">
+                    <div><img src="images/page1_ico1.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico2.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico3.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico4.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico5.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2 omega">
+                <div class="item">
+                    <div><img src="images/page1_ico6.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>   
+			</div>-->                                                         
+        </div>
+    </div>
+</div>
+</form>
+
+<!--=======footer=================================-->
+
+ <footer>			 
+			
+                    <!-- FOOTER STARTS HERE -->
+                        
+						<%@ include file = "../../include/Footer.jsp" %>
+                    <!-- FOOTER ENDS HERE -->
+               
+ </footer>
+</body>
+</html>

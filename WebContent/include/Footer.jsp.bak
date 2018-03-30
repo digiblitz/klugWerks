@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<style type="text/css">
+a.hov {
+    color: #fff;
+}
+a.hov:hover {
+    color: red;
+}
+
+</style>
+
+<head>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/stuck.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<footer id="footer">
+    <div class="container_12">
+        <div class="grid_2">
+           <a href="user.html?cmd=initHome"><img src="images/DBLogo-new.png" alt="Logo" style="width:50%; height:50%"></a>
+        </div>
+        <div class="grid_4">
+            <h5>Address</h5>
+            <p style="color:#FFFFFF">13241 WOODLAND PARK ROAD, SUITE 110,</p>
+			<p style="color:#FFFFFF">HERNDON, VIRGINIA 20171, USA</p>
+			<p>Sales - <a class="hov" href="mailto:sales@menschforce.com">sales@menschforce.com</a></p>
+			<p>Billing & Finance - <a class="hov" href="mailto:billing@menschforce.com">billing@menschforce.com</a></p>
+			<p>Customer Service - <a class="hov" href="mailto:support@menschforce.com">support@menschforce.com</a></p>
+			<p></p>
+        </div>   
+		<div class="grid_3" >
+		<div class="copy" style="padding-top:45px;"><span id="copyright-year"></span>&nbsp;&copy;&nbsp;
+            <a href="http://www.digiblitz.com/" target="_blank">Powered by</a> <a style="margin-left:5px;" href="https://www.digiblitz.com/" target="_blank">digiBlitz</a>
+			<br>
+			<a href="user.html?cmd=initPrivacy">Privacy Policy</a>
+			<br>
+			<a id='__imgButtonClickToCall' href='#'  onclick="window.open('https://acctmgr.evoice.com/AcctMgr/ClickToCall/ClickToConnectSession.aspx?key=b59128d0-265b-421f-bd3e-99ace9ae1773','','width=520,height=240, left=40, top=100, resizable=no,scroll=yes,status=no,titlebar=no,toolbar=no,addressbar=no,copyhistory=no,navigationtoolbar=no')"  style='cursor:pointer;border:none'><img  src='https://acctmgr.evoice.com/AcctMgr/Brands/eVoice/Images/ClickToCall/SystemImages1_h.jpg' alt='Click to open call me page' id='__imgClickToCall' style='border:0px;' />&nbsp;+1 703-439-2650</a>
+			</div>
+		</div>     
+        <div class="grid_4">
+            <h5>Follow us</h5>
+            <ul class="socials">
+                <li><a href="https://twitter.com/digiBlitz" target="_blank" class="col1"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/KlugWerks-840699036076270/" target="_blank" class="col2"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/digiblitz-technologies" target="_blank" class="col3"><i class="fa fa-linkedin"></i></a></li>
+              	<li><a href="https://www.xing.com/companies/digiblitzeuropegmbh" target="_blank" class="col3"><i class="fa fa-xing"></i></a></li>
+            </ul>
+            
+        </div>
+		
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+     <head>
+     <title>Why klugWerks?</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/stuck.css">
+	 <link rel="stylesheet" href="css/skeleton.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>     
+     <script src="js/superfish.js"></script>
+     <script src="js/tmStickUp.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/camera.js"></script>  
+     <script src="js/sForm.js"></script> 
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                jQuery('#camera_wrap').camera({
+                    loader: true,
+                    pagination: true,
+                    minHeight: '200',
+                    thumbnails: false,
+                    height: '50%',
+                    caption: true,
+                    navigation: false,
+                    fx:  'mosaic'
+                });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+		<style>
+			.Table
+    {
+        display: table;
+    }
+    .Title
+    {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+	.Heading p{ color:#cc0001; font-weight:bold; font-size:17px; padding:10px 0;}
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-width: 1px thin;
+        padding:10px;
+		border-color: #D0D0D0;
+	
+    }
+	.Cell ul li{ padding:3px; color: #333;}
+	.Cell ul li i{padding:3px 6px 0 0;  color: #E39500;}
+	.pad{ padding:10px 0;}
+	.grid_3{ height:200px!important;}
+	.bor{     border-bottom: 1px solid #ccc;
+    width: 1040px;
+    margin: 20px auto;
+    float: left;}
+	.grid_3 p{ text-align:justify;}
+		</style>
+     </head>
+<body id="top">
+
+<!--==============================header=================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header.jsp" %>
+</header>
+
+<form id="form1" name="form1" method="post" action="">
+<div class="bg1">
+
+<!--=======slider================================-->
+
+    <!--<div class="slider_wrapper">
+        <div id="camera_wrap">
+           <div data-src="images/slide1.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                       
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation <span>System</span></div>
+                                          
+                    </div>
+                </div>
+           </div>
+            <div data-src="images/slide2.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                       
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation<span>System</span></div>
+                                          
+                    </div>
+                </div>
+           </div>
+            <div data-src="images/slide3.jpg">
+                <div class="camera_caption">
+                    <div class="container_12" style="width:1070px">
+                        
+                            <div class="title-2">A manufacturing Compliance</div>
+                            <div class="title-2">& Best-Practices Automation<span>System</span></div>
+                                        
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+-->
+<!--=======content================================-->
+
+    <div id="content" class="p23" style="width:1170px; position: relative;
+  background: url(../images/bg1.jpg) 0 0 repeat; margin:0px auto;">
+        <div class="container_12 center">
+         <p class="high">"Aggregate your ad-hoc Chemistry, Order, FNA, HR and Supply Chain Management functions into effective automated business process for best practices & compliances"</p>
+		<div class="container-12">
+			<h2 style="text-align:left; margin-top:30px; color:#000;">Why klugWerks?</h2>
+			<div class="gridd gridd1">
+			<ul>
+				<li><a>Integrate all your applications under a single platform</a></li>
+				<li><a>Align Business processes with Strategic and IT components</a> </li>
+				<li><a>Use of industry standard and open technologies to ensure long -term development and support</a></li>
+				<li><a>Comprehensive and extensible reporting capabilities to meet any and every information requirement in the manufacturing area, even when data is spread across many &nbsp;&nbsp;&nbsp;different systems</a></li>
+				<li><a>Keep the IT and Business groups on the same page and working together with access to the most current information</a></li>
+				<li><a>Better communication between process and application groups as all of them talk the same language and share the same data format</a></li>
+				<li><a>Better adaptation to changes in the vendor landscape, industry trends and regulatory environment</a></li>
+				<li><a>Seamless and hassle-free connectivity with many popular third-party applications</a></li>
+			</ul>
+			</div>
+		</div>			
+	       
+		</div>
+		
+		
+		<div class="pad"></div>
+		
+		
+		<div class="container_12">
+			<div class="Table">
+			
+			<div class="Heading">
+				<div class="Cell">
+					<p>Automated Work Flow & Communication</p>
+				</div>
+				<div class="Cell">
+					<p>Process Automation</p>
+				</div>
+				<div class="Cell">
+					<p>Operational Process Management</p>
+				</div>
+				
+			</div>
+			<div class="Row">
+				<div class="Cell">
+					<ul>
+						<li><i class="fa fa-check-square-o"></i><a>Fully Automated Work Flow through our <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state-of-the-art BPM & SOA technologies</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>EA Framework & Lifecycle enforcement</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Governance Lifecycle driven by Central <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repository system</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Modeler to create custom business process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Executive Dashboard</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Enterprise-wide Business Intelligence from <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Single web Interface</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Integrate & Orchestrate existing applications to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;achieve business goal</a> </li>
+						<li><i class="fa fa-check-square-o"></i><a>Meta-Process/Data level Integration</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>OAGIS BOD & XML</a></li>
+						
+					</ul>
+				</div>
+				
+				<div class="Cell">
+					<ul>
+						<li><i class="fa fa-check-square-o"></i><a>Chemistry Validation/Mapping Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Order Processing & Management Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Sales order to Manufacturing Order Mapping</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Quality Assurance Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Chemistry Decision Support check</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Manufacturing Flow Management</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Supplier Relationship Management</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Performance Management/KPI process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Warehousing Management</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Product Marketing/Commercialization Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Procurement Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Engineering Change Orders</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Improve operational excellence through Plant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;operation Business Processes</a></li>
+				
+					</ul>
+				</div>
+				
+				<div class="Cell">
+					<ul>
+						<li><i class="fa fa-check-square-o"></i><a>Business Process Modelling(BPM) Modelling of processes</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>SLA & SLO Enforcement/Governance Processes</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Assets/Artifacts Governance Process</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>ERP Integration and CRM Integration</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Lifecycle Enforcement of your operational processes across &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many Business units
+						</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Align with your EA practices within the BU or the entire &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;organization</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Align IT assets through BPM/SOA orchestration engine </a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Get reports at Executive, Business and Operational levels by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switching to different view points</a></li>
+						<li><i class="fa fa-check-square-o"></i><a>Transform your business through TOGAF based Business &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architecture lifecycle</a></li>
+						
+					</ul>
+				</div>
+				
+			</div>
+			
+			</div>
+		</div>
+		
+        <!--<div class="container_12">
+            <div class="grid_12">
+                <div class="divider"></div>
+                <div class="center">
+                    <h3>Work smarter with our company!</h3>
+                    <h3>We provide innovative and cost-effective industrial solutions!</h3>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>-->
+       
+	   
+	    <!--<div class="container_12">
+            <div class="grid_12">
+                <div class="center">
+                    <h3>Our partners</h3>
+                </div>
+            </div>
+        </div>-->
+        <!--<div class="container_12">
+            <div class="grid_2 alpha">
+                <div class="item">
+                    <div><img src="images/page1_ico1.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico2.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico3.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico4.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2">
+                <div class="item">
+                    <div><img src="images/page1_ico5.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>
+            <div class="grid_2 omega">
+                <div class="item">
+                    <div><img src="images/page1_ico6.png" alt=""></div>
+                    <a href="#">company name</a>
+                    <p>Lorem ipsum dolor set</p>
+                </div>
+            </div>   
+			</div>-->                                                         
+        </div>
+    </div>
+</div>
+</form>
+
+<!--=======footer=================================-->
+
+ <footer>			 
+			
+                    <!-- FOOTER STARTS HERE -->
+                        
+						<%@ include file = "../../include/Footer.jsp" %>
+                    <!-- FOOTER ENDS HERE -->
+               
+ </footer>
+</body>
+</html>

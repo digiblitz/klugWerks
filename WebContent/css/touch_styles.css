@@ -1,0 +1,255 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+/*----------------------------
+	Thumbnails
+-----------------------------*/
+
+.thumb1 {
+	position: relative;
+	margin: 7px 0 46px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.thumb1 .capture {
+	position: relative;
+	overflow: hidden;
+	padding: 28px 16px 26px;
+	background: #fff;
+
+	transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.capture>div {
+	position: relative;
+	float: left;
+}
+
+.thumb1 .capture {
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #fff;
+}
+
+.thumb1:hover .capture {
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.thumb1 p {margin-top: 14px;}
+
+.thumb1 a.magnifier {
+	width:100%;
+	display:inline-block;
+	position:relative;
+	text-decoration:none;
+	z-index: 100;
+}
+
+.magnifier {
+    background: url(../images/img_hover.png) 0 0 no-repeat;
+    display: block;
+    
+    background-position:center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+.magnifier img {
+	width: 100%;
+	position: relative;
+	display: block;
+	-webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.thumb1:hover .magnifier img {
+    opacity: 0.5;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+}
+
+
+.thumb1 a.gal {
+    display: block;
+    margin-bottom: 19px;
+    background: url(../images/img_hover.png) center center no-repeat #fc9b7a;
+}
+
+/* The gallery overlay */
+
+#galleryOverlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:100000;
+	background-color:#222;
+	background-color:rgba(0,0,0,0.8);
+	overflow:hidden;
+	display:none;
+	
+	-moz-transition:opacity 1s ease;
+	-webkit-transition:opacity 1s ease;
+	transition:opacity 1s ease;
+}
+
+/* This class will trigger the animation */
+
+#galleryOverlay.visible{
+	opacity:1;
+}
+
+#gallerySlider{
+	height:100%;
+	
+	left:0;
+	top:0;
+	
+	width:100%;
+	white-space: nowrap;
+	position:absolute;
+	
+	-moz-transition:left 0.4s ease;
+	-webkit-transition:left 0.4s ease;
+	transition:left 0.4s ease;
+}
+
+#gallerySlider .placeholder{
+	height: 100%;
+	line-height: 1px;
+	text-align: center;
+	width:100%;
+	display:inline-block;
+}
+
+/* The before element moves the
+ * image halfway from the top */
+
+#gallerySlider .placeholder:before{
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin-right:-1px;
+}
+
+#gallerySlider .placeholder img{
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#gallerySlider.rightSpring{
+	-moz-animation: rightSpring 0.3s;
+	-webkit-animation: rightSpring 0.3s;
+}
+
+#gallerySlider.leftSpring{
+	-moz-animation: leftSpring 0.3s;
+	-webkit-animation: leftSpring 0.3s;
+}
+
+/* Firefox Keyframe Animations */
+
+@-moz-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-moz-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Safari and Chrome Keyframe Animations */
+
+@-webkit-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-webkit-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Arrows */
+
+#prevArrow,#nextArrow{
+	border:none;
+	text-decoration:none;
+	background:url('../images/arrows.png') no-repeat;
+	opacity:0.5;
+	cursor:pointer;
+	position:absolute;
+	width:43px;
+	height:58px;
+	
+	top:50%;
+	margin-top:-29px;
+	
+	-moz-transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	transition:opacity 0.2s ease;
+}
+
+#prevArrow:hover, #nextArrow:hover{
+	opacity:1;
+}
+
+#prevArrow{
+	background-position:left top;
+	left:40px;
+}
+
+#nextArrow{
+	background-position:right top;
+	right:40px;
+}
+
+
+/*----------------------------
+	Media Queries
+-----------------------------*/
+
+
+@media screen and (max-width: 995px) {
+	
+	.thumb1 {width:auto;}
+
+	.thumb1 .capture { padding: 17px 12px 17px;}
+	.thumb1 .capture br {display: none;}
+	.capture > div {width: 100%; float: left;}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.thumb1 .capture {padding: 18px;}
+
+
+}
